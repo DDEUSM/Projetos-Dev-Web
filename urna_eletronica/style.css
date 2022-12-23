@@ -1,0 +1,374 @@
+@keyframes pisca{
+    0%{opacity: 0.1;}
+    50%{opacity: 1.0;}
+    100%{opacity: 0.1;}
+}
+
+body {
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.painel-dos-candidatos {
+    display: flex;
+    height: 250px;
+    width: 1500px;
+    margin-top: 20px;
+    
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.candidato-vitrine {
+    display: inline;
+    height: 250px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;    
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.445);
+    height: inherit;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    transform: all ease 0.5s;
+}
+
+.candidato-vitrine:hover {
+    cursor: pointer;
+    margin-left: 0;
+    margin-right: 0;
+    z-index: 999;
+    height: 270px;
+    width: 220px;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.445);
+}
+
+.candidato-vitrine h2 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+
+
+.nome-vitrine {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+.numero-vitrine {
+    margin: 0;
+    font-family: Arial, helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+.tampa-da-urna {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    width: 1150px;
+    height: 480px;
+    padding: 50px;
+    background-color: rgb(182, 182, 182);
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+
+}
+
+.container-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 0px;
+    width: 1010px;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-bottom: 200px solid rgb(209, 209, 209);
+    
+   
+    
+
+}
+
+/* PAINEL PRINCIPAL*/
+
+.painel-principal {
+    
+    width: 680px;
+    height: 500px;
+    background-image: linear-gradient(-40deg, rgb(179, 201, 221), rgb(191, 211, 219), rgb(199, 207, 221),rgb(182, 200, 218));
+    border: 2px solid black;
+    
+    
+}
+
+.painel-info {
+    display: flex;
+    width: auto;
+    height: auto;
+    
+}
+
+section {
+    
+    display: block;
+    width: 565px;
+    height: 375px;
+    
+}
+
+.painel-principal h2 {
+    
+    
+}
+
+.title {
+    margin-left: 20px;
+}
+
+.cargo-eletivo {
+    text-align: center;
+    font-weight: 500;
+}
+
+.numeros-digitados{
+    margin-left: 20px;
+    display: flex;
+    width: 300px;
+    height: 70px;
+    
+}
+
+.pisca {
+    animation-name: pisca;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.nome-candidato {
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+.nome-vice {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.partido-candidato {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.numeros-digitados div {
+    display: flex;
+    width: 50px;
+    height: 70px;
+    font-size: 1.5em;
+
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.info-de-tecla {
+    display: none;
+    width: auto;
+    height: auto;
+    border-top: 2px solid black;
+
+}
+
+/* teste*/
+.show {
+    display: block;
+}
+
+.info-de-tecla p {
+    margin-left: 20px;
+}
+
+.area-imagem {
+    
+    width: 110px;
+    text-align: right;
+    
+}
+
+.candidato div {
+    background-color: white;
+    text-align: center;
+    
+}
+
+.vice-candidato {
+    width: 100px;
+    margin-left: 10px;
+}
+
+.vice-candidato div {    
+    width: 100px;
+    text-align: center;
+    background-color: white;
+    
+}
+
+
+.voto-branco {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 675px;
+    height: 375px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.fim {
+    display: none;
+    height: 504px;
+    width: 679px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fim h1 {
+    font-size: 4em;
+}
+
+.voto-nulo {
+    display: none;    
+    margin-left: 20px;
+    font-size: 2.5em;
+}
+
+
+/* TECLADO*/
+
+.teclado {
+    display: inline;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(36, 36, 36);
+    text-align: center;
+    margin-left:50px;
+    padding: 50px 20px 50px 20px ;
+}
+
+.teclado button {
+    font-size:2.0em ;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(36, 36, 36);
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    border-top: 2px solid rgb(141, 141, 141);
+    border-right: 2px solid rgb(105, 105, 105);
+    box-shadow: 0px 0px 16px 5px black;
+    border-radius: 5px;
+    height: 60px;
+    width: 90px;
+    margin: 10px 5px 10px 5px;
+    text-align: left;
+    cursor: pointer;
+    transition: all ease in .5s;
+}
+
+.teclado button:hover {
+    background-color: black;
+    color: rgb(168, 168, 168);
+    border: 2px solid rgb(24, 24, 24);
+    box-shadow: 0px 0px 0px 0px;
+}
+
+.buttons-de-finalizar {
+    display: flex;
+    height: 90px;
+    width: 400px;    
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.btn.branco {
+    display: flex;
+    height: 60px;
+    width: 115px;
+    background-color: white;
+    
+    border-bottom: 2px solid rgb(128, 128, 128) ;
+    border-left: 2px solid grey;
+    border-radius: 3px;
+    box-shadow: 0px 0px 16px 5px black;
+
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.btn.branco:hover {
+    cursor: pointer;
+    background-color: rgb(168, 168, 168);
+}
+
+.btn.corrige {
+    display: flex;
+    height: 60px;
+    width: 115px;
+    background-color: rgb(216, 74, 30);
+    border-top: 2px solid rgb(255, 118, 76);
+    border-right: 2px solid rgb(255, 118, 76);
+    border-bottom: 2px solid rgb(161, 55, 23);
+    border-left: 2px solid rgb(161, 55, 23);
+    border-radius: 3px;
+    box-shadow: 0px 0px 16px 5px black;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.btn.corrige:hover {
+    cursor: pointer;
+    background-color: rgb(165, 57, 24);
+}
+
+.btn.confirma {
+    display: flex;
+    height: 70px;
+    width: 115px;
+    background-color: rgb(0, 167, 56);
+    border-top: 2px solid rgb(0, 214, 71);
+    border-right: 2px solid rgb(0, 214, 71);
+    border-bottom: 2px solid rgb(0, 117, 39);
+    border-left: 2px solid rgb(0, 117, 39);
+    border-radius: 3px;
+    box-shadow: 0px 0px 16px 5px black;
+
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.btn.confirma:hover {
+    cursor: pointer;
+    background-color: rgb(0, 102, 34);
+}

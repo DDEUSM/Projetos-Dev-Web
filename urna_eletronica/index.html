@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Urna Eletrônica</title>
+</head>
+<body>
+    <header>
+        <aside class="painel-dos-candidatos">
+            <section class="candidato-vitrine">
+                <h2>Prefeito</h2>
+                <img src="img/84.jpg" alt="">
+                <div class="nome-vitrine">Jeremias</div>
+                <div class="numero-vitrine">84</div>
+            </section>
+            <section class="candidato-vitrine">
+                <h2>Prefeito</h2>
+                <img src="img/99.jpg" alt="">
+                <div class="nome-vitrine">Maximus II</div>
+                <div class="numero-vitrine">99</div>
+            </section>
+            <section class="candidato-vitrine">
+                <h2>Vereador</h2>
+                <img src="img/12345.jpg" alt="">
+                <div class="nome-vitrine">Jeca-Tatu</div>
+                <div class="numero-vitrine">12345</div>
+            </section>
+            <section class="candidato-vitrine">
+                <h2>Vereador</h2>
+                <img src="img/38111.jpg" alt="">
+                <div class="nome-vitrine">Soneca</div>
+                <div class="numero-vitrine">38111</div>
+            </section>
+        </aside>
+    </header>
+    
+    <div class="tampa-da-urna">
+        <div class="container-top"></div>
+    </div>
+    <main>
+        
+        <aside class="painel-principal">
+            <div class="voto-branco pisca">
+                <h1>VOTO EM BRANCO</h1>
+            </div>
+            <div class="fim">
+                <h1>FIM</h1>
+            </div>
+           <div class="painel-info">
+                <section class="candidatos">
+                    <h2 class="title">...</h2>
+                    <h2 class="cargo-eletivo">...</h2>
+                    
+                    <div class="numeros-digitados">
+                    </div>
+
+                    <div class="voto-nulo">
+                        <h1 class="pisca">VOTO NULO</h1>                        
+                    </div>
+                    <div class="nome-candidato"></div>
+                    <div class="partido-candidato"></div>
+                    <div class="nome-vice"></div>
+                </section>
+    
+                <div class="area-imagem">
+                    <div class="candidato">
+                        <img src="" alt="">
+                        <div class="cargo-politico"></div>
+                    </div>
+                    <div class="vice-candidato">
+                        <img src="" alt="" width="100">
+                        <div class="cargo-politico">...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-de-tecla">
+                <p>Aperte a Tela</p>
+                <p>CONFIRMAR para CONFIRMAR este voto</p>
+                <p>CORRIGE para REINICIAR este voto</p>
+            </div>
+        </aside>
+        <aside class="teclado">
+            <button data-key="1">1</button>
+            <button data-key="2">2</button>
+            <button data-key="3">3</button>
+            <button data-key="4">4</button>
+            <button data-key="5">5</button>
+            <button data-key="6">6</button>
+            <button data-key="7">7</button>
+            <button data-key="8">8</button>
+            <button data-key="9">9</button>
+            <button data-key="0">0</button>
+            <div class="buttons-de-finalizar">
+                <div class="btn branco">BRANCO</div>
+                <div class="btn corrige">CORRIGE</div>
+                <div class="btn confirma">CONFIRMA</div>
+            </div>
+        </aside>
+    </main>
+    <script src="candidatos.js"></script>
+    <script src="urna_ele.js"></script>
+</body>
+</html>
